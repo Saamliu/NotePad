@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefefe"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/note_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#22cc5f"
+        android:gravity="center"
+        android:text="备忘录"
+        android:textColor="@color/text"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#E4E4E4"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/note_name">
+    </ListView>
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/add"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="300dp"/>
+
+    <ImageView
+        android:id="@+id/iv_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/set"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="370dp"/>
+</RelativeLayout>
